@@ -1,0 +1,16 @@
+This package is licensed under the Apache 2.0 license.
+The contents of this license can be found in apache_license_2.0.txt.
+
+Except where noted, the code is copyright Simplify Now, LLC.
+
+It's impossible to make a complete list of the open source software used here, but the major top-level libraries and sources include:
+https://github.com/mttkay/signpost
+https://github.com/pakerfeldt/signpost-retrofit
+https://github.com/wuman/android-oauth-client
+https://github.com/square/retrofit
+https://github.com/square/picasso
+https://github.com/square/otto
+
+The icons are provided through Android studio:
+Material Design Icons from Google, licensed under the Creative Common Attribution 4.0 International License (CC-BY 4.0) -- http://creativecommons.org/licenses/by/4.0/
+AndroidIcons by Opoloo, licensed under the Creative Commons Attribution-ShareAlike 4.0 International CC BY-SA 4.0 -- http://creativecommons.org/licenses/by-sa/4.0/

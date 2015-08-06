@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- values for all screens not >600dp -->
+<resources>    
+    <integer name="column_count">3</integer>
+</resources>

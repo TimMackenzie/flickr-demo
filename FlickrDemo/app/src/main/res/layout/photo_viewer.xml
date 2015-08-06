@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_dark"
+>
+    <ImageView
+        android:id="@+id/photo_viewer_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType = "centerInside"
+    />
+
+    <RelativeLayout
+        android:id="@+id/photo_viewer_buttonbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+    >
+        <ImageView
+            android:id="@+id/photo_viewer_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_info_white"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/image_margin_button"
+            android:onClick="onClickInfo"
+        />
+
+        <ImageView
+            android:id="@+id/photo_viewer_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_star_0"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/image_margin_button"
+            android:onClick="onClickFavorite"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>

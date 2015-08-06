@@ -1,0 +1,34 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FlickerViewer"
+>
+    <item
+        android:id="@+id/action_user"
+        android:title="@string/action_user"
+        android:icon="@drawable/ic_action_user"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+    />
+    <item
+        android:id="@+id/action_flickr"
+        android:title="@string/action_flickr"
+        android:icon="@drawable/ic_action_flickr_white"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+    />
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="102"
+        app:showAsAction="always"
+    />
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/action_logout"
+        android:orderInCategory="103"
+        app:showAsAction="never"
+    />
+</menu>

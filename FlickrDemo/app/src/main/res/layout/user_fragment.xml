@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:id="@+id/userFragment"
+>
+    <include layout="@layout/user_bar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_material_dark"
+        />
+
+    <!--
+    <ImageView
+        android:layout_width="@dimen/image_size_thumbnail"
+        android:layout_height="@dimen/image_size_thumbnail"
+        android:layout_margin="@dimen/image_margin_thumbnail"
+        android:id="@+id/profileIcon"
+    />
+    -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userTableLayout"
+        android:layout_margin="8dp"
+    >
+    </TableLayout>
+
+    <include layout="@layout/photoset_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    />
+</LinearLayout>

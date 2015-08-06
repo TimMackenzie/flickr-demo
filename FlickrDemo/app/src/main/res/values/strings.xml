@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FlickrDemo</string>
+
+    <string name="action_user">My profile</string>
+    <string name="action_flickr">Interestingness</string>
+    <string name="action_search">Search</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_test_latest">test_latest</string>
+
+    <string name="fragment_title_user_data">Photosets</string>
+    <string name="fragment_title_favorites">Favorites</string>
+    <string name="fragment_title_interestingness">Stream</string>
+    <string name="fragment_title_debug">Debug</string>
+
+    <string name="dialog_search_title">Search</string>
+    <string name="dialog_search_message">Find a user by username (must match exactly)</string>
+
+    <string name="search_failed">No account found matching that username</string>
+
+    <string name="login_title">Login required</string>
+    <string name="login_message">Please log in to Yahoo and authorize FlickrDemo to link to your Flickr account</string>
+
+</resources>

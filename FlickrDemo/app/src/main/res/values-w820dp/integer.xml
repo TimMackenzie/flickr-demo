@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- values for width over 820dp, e.g. 7" tablets in landscape mode -->
+<resources>    
+    <integer name="column_count">5</integer>
+</resources>
