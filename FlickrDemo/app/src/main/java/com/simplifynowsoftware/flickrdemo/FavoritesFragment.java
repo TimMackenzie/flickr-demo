@@ -51,11 +51,6 @@ public class FavoritesFragment extends Fragment{
         return context.getString(R.string.fragment_title_favorites);
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
-
     @Override public void onResume() {
         super.onResume();
         FlickrDemo.getBusInstance().register(this);
@@ -126,7 +121,7 @@ public class FavoritesFragment extends Fragment{
 
                     final Intent intent = new Intent(getActivity(), PhotoViewer.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.putExtra(PhotoViewer.INTENT_EXTRA_PHOTO_URL, FlickrImageUrl.getUrl(photo, false));
+                    intent.putExtra(PhotoViewer.INTENT_EXTRA_PHOTO_URL, FlickrImageUrl.getUrl(photo, FlickrImageUrl.USE_FULL_SIZE));
                     intent.putExtra(PhotoViewer.INTENT_EXTRA_PHOTO_ID, photo.getId());
                     intent.putExtra(PhotoViewer.INTENT_EXTRA_PHOTO_SECRET, photo.getSecret());
                     startActivity(intent);

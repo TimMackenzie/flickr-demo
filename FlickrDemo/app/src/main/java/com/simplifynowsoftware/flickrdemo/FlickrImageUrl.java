@@ -27,6 +27,9 @@ import com.simplifynowsoftware.flickrdemo.retrofit.response.photosets.Photoset;
  *  do not match identically-named objects.
  */
 public class FlickrImageUrl {
+    public static final boolean USE_THUMBNAIL_SIZE      = true;
+    public static final boolean USE_FULL_SIZE           = false;
+
     protected static final String SIZE_SMALL            = "q";//s"; //TODO use s for smaller devices to save bandwidth
     protected static final String SIZE_MEDIUM           = "b";
 
@@ -35,6 +38,8 @@ public class FlickrImageUrl {
 
     protected static final String BUDDY_ICON_PREFIX     = "https://flickr.com/buddyicons/";
     protected static final String BUDDY_ICON_POSTFIX    = ".jpg";
+
+
 
 
     /*
@@ -51,12 +56,12 @@ public class FlickrImageUrl {
     }
 
     // Photoset, which shows primary image
-    public static String getUrl(final Photoset photoset, final boolean isThumbnail) {
+    public static String getUrl(final Photoset photoset) {
         return getUrl(  photoset.getFarm(),
                 photoset.getServer(),
                 photoset.getPrimary(), // primary is the primary photo in the set
                 photoset.getSecret(),
-                isThumbnail);
+                USE_THUMBNAIL_SIZE); // Always thumbnail for the photoset preview
     }
     /*
      * Generate URL for image, using Photo object

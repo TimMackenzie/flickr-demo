@@ -5,12 +5,9 @@
     <string name="action_flickr">Interestingness</string>
     <string name="action_search">Search</string>
     <string name="action_logout">Logout</string>
-    <string name="action_test_latest">test_latest</string>
 
     <string name="fragment_title_user_data">Photosets</string>
     <string name="fragment_title_favorites">Favorites</string>
-    <string name="fragment_title_interestingness">Stream</string>
-    <string name="fragment_title_debug">Debug</string>
 
     <string name="dialog_search_title">Search</string>
     <string name="dialog_search_message">Find a user by username (must match exactly)</string>

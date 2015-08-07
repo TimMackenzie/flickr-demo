@@ -59,11 +59,6 @@ public class UserFragment extends Fragment{
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         final View userView = getActivity().getLayoutInflater().inflate(R.layout.user_fragment, null);

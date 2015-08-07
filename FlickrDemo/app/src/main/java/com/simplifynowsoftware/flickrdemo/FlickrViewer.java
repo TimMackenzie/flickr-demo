@@ -353,7 +353,7 @@ public class FlickrViewer extends FragTabPagerCompat {
     }
 
     public class UserIdUpdate {
-        protected String mUserId;
+        protected final String mUserId;
 
         public UserIdUpdate(final String userId) {
             mUserId = userId;

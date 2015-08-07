@@ -23,7 +23,7 @@
         android:title="@string/action_search"
         android:icon="@drawable/ic_action_search"
         android:orderInCategory="102"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
     />
     <item
         android:id="@+id/action_logout"

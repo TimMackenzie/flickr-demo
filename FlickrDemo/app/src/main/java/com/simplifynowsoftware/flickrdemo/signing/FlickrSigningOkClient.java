@@ -33,7 +33,7 @@ import se.akerfeldt.signpost.retrofit.SigningOkClient;
  *  Flickr.
  */
 public class FlickrSigningOkClient extends SigningOkClient {
-    protected String mTokenSecret;
+    protected final String mTokenSecret;
 
     public FlickrSigningOkClient(RetrofitHttpOAuthConsumer consumer) {
         super(consumer);

@@ -32,11 +32,9 @@ import java.util.List;
 import static android.widget.ImageView.ScaleType.CENTER_CROP;
 
 public class PhotosetAdapter extends BaseAdapter {
-    public static final boolean USE_THUMBNAIL_SIZE = true;
-
     protected final Context context;
 
-    protected List<Photoset> mPhotosets;
+    protected final List<Photoset> mPhotosets;
 
     public PhotosetAdapter(Context context, final Photosets photosets) {
         this.context = context;
@@ -47,7 +45,7 @@ public class PhotosetAdapter extends BaseAdapter {
     @Override public View getView(int position, View convertView, ViewGroup parent) {
         Photoset photoset = mPhotosets.get(position);
 
-        final String url = FlickrImageUrl.getUrl(photoset, USE_THUMBNAIL_SIZE);
+        final String url = FlickrImageUrl.getUrl(photoset);
 
         SquaredImageView view = (SquaredImageView) convertView;
         if (view == null) {

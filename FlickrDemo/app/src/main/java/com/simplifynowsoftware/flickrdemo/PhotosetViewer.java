@@ -159,7 +159,7 @@ public class PhotosetViewer extends AppCompatActivity {
 
                     final Intent intent = new Intent(PhotosetViewer.this, PhotoViewer.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.putExtra(PhotoViewer.INTENT_EXTRA_PHOTO_URL, FlickrImageUrl.getUrl(photo, false));
+                    intent.putExtra(PhotoViewer.INTENT_EXTRA_PHOTO_URL, FlickrImageUrl.getUrl(photo, FlickrImageUrl.USE_FULL_SIZE));
                     intent.putExtra(PhotoViewer.INTENT_EXTRA_PHOTO_ID, photo.getId());
                     intent.putExtra(PhotoViewer.INTENT_EXTRA_PHOTO_SECRET, photo.getSecret());
                     if(mUserId != null && mUserId.compareTo(FlickrDemo.getOwnUserId()) == 0) {

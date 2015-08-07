@@ -31,11 +31,9 @@ import java.util.List;
 import static android.widget.ImageView.ScaleType.CENTER_CROP;
 
 public class PhotoAdapter extends BaseAdapter {
-    public static final boolean USE_THUMBNAIL_SIZE = true;
-
     protected final Context context;
 
-    protected List<PhotoCommon> mPhotos;
+    protected final List<PhotoCommon> mPhotos;
 
     public PhotoAdapter(Context context, final List<PhotoCommon> photos) {
         this.context = context;
@@ -46,7 +44,7 @@ public class PhotoAdapter extends BaseAdapter {
     @Override public View getView(int position, View convertView, ViewGroup parent) {
         PhotoCommon photo = mPhotos.get(position);
 
-        final String url = FlickrImageUrl.getUrl(photo, USE_THUMBNAIL_SIZE);
+        final String url = FlickrImageUrl.getUrl(photo, FlickrImageUrl.USE_THUMBNAIL_SIZE);
 
         SquaredImageView view = (SquaredImageView) convertView;
         if (view == null) {

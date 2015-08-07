@@ -82,7 +82,7 @@ public class RetrofitTest extends AndroidTestCase {
 
         Log.i("getPhotoset", "Photos count: " + photoset.getPhotoset().getTotal());
         Log.i("getPhotoset", "First photo ID: " + photoset.getPhotoset().getPhoto().get(0).getId()); // FIRST_PHOTO_ID
-        String url = FlickrImageUrl.getUrl(photoset.getPhotoset().getPhoto().get(0), true);
+        String url = FlickrImageUrl.getUrl(photoset.getPhotoset().getPhoto().get(0), FlickrImageUrl.USE_THUMBNAIL_SIZE);
         assert(URLUtil.isValidUrl(url)); // doesn't check if url points to actual image, just that url is valid
     }
 
