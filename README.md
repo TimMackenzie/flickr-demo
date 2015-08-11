@@ -38,6 +38,10 @@ The icons are provided through Android studio:
   * Material Design Icons from Google, licensed under the Creative Common Attribution 4.0 International License (CC-BY 4.0) -- http://creativecommons.org/licenses/by/4.0/
   * AndroidIcons by Opoloo, licensed under the Creative Commons Attribution-ShareAlike 4.0 International CC BY-SA 4.0 -- http://creativecommons.org/licenses/by-sa/4.0/
 
+Class generation for Flickr JSON:
+  * http://www.jsonschema2pojo.org/
+
+
 License
 ------------
   Copyright (C) 2015 Simplify Now, LLC
